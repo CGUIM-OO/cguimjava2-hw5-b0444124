@@ -1,14 +1,14 @@
 import java.util.ArrayList;
 
 public abstract class Person {
-	private ArrayList<Card> oneRoundCard;
+	private ArrayList<Card> oneRoundCard;// 此牌局的卡
 	public void setOneRoundCard(ArrayList<Card> cards){
-		oneRoundCard=cards;
+		oneRoundCard=cards;// 設定此牌局所得到的卡 setter
 	}
 	public ArrayList<Card> getOneRoundCard(){
 		return oneRoundCard;
 	}
-	public abstract boolean hit_me(Table table);
+	public abstract boolean hit_me(Table table) ;// 是否要牌，是回傳true，不再要牌則回傳false
 	public int getTotalValue() {
 		int Ace_count = 0;
 		int total_value = 0;
